@@ -1,0 +1,248 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Tomorrow&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Audiowide&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .font-montserrat {
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+ }
+
+ .fw-600 {
+     font-weight: 600;
+ }
+
+ .purple {
+     color: #9333ea;
+ }
+
+ .bodyDarkMode {
+     background-color: #111827;
+ }
+
+ .fRow h2 {
+     font-family: "Exo 2", sans-serif;
+ }
+
+ .codeSpan {
+     font-family: 'Cabin', sans-serif;
+     color: #9333ea;
+     font-weight: 600;
+ }
+
+ .codeSpan i {
+     font-weight: 600 !important;
+ }
+ .moonBtn {
+     color: #111827;
+     font-size: 2rem;
+ }
+
+ .moonIcon {
+     margin-right: 5vw;
+     cursor: pointer;
+     color: #111827;
+     font-size: 2.5rem;
+ }
+
+ li a {
+     /* font-family: 'Tomorrow', sans-serif; */
+     font-family: 'Cabin', sans-serif;
+     color: #212529 !important;
+     font-size: large;
+ }
+
+ li a:active,
+ li a:focus,
+ li a:hover {
+     color: #8c61b5 !important;
+     transform: scale(1.1);
+ }
+
+ .menuBtn {
+     border: none !important;
+     color: #9333ea !important;
+     font-size: 30px;
+ }
+
+ .topNavbar {
+     background-color: #ffffff;
+     box-shadow: 0px 0px 23px #9333ea;
+ }
+
+ .firstP {
+     margin: auto;
+ }
+
+ .secondBox img {
+     max-width: 100%;
+     border-radius: 50%;
+     border: 20px dashed #9333ea;
+ }
+
+ .twoBtns div .btn1 {
+     background: #111827;
+     outline: none;
+     border: none;
+     font-size: 13px;
+     padding: 0.6rem 0.8rem;
+     font-family: 'Cabin';
+     border-radius: 7px;
+     border: 1px solid white;
+ }
+
+ .twoBtns div .btn1 a {
+     text-decoration: none;
+     color: #fdf5ec;
+ }
+
+ .twoBtns div .btn2 a {
+     text-decoration: none;
+     color: #111827;
+ }
+
+
+ .twoBtns div .btn1:hover {
+     background: #2d3f66;
+     color: #fdf5ec;
+ }
+
+ .twoBtns div .btn2:hover {
+     background: #798eae;
+     color: #111827;
+ }
+
+ .twoBtns div .btn2 {
+     background: #d1d5db;
+     outline: none;
+     border: none;
+     font-size: 13px;
+     padding: 0.6rem 0.8rem;
+     font-family: 'Cabin';
+     border-radius: 7px;
+     font-weight: bold;
+ }
+
+ /* tools and technology  */
+ .tools-card,.projects-card{
+    background: transparent;
+    visibility: visible;
+    box-shadow: 0px 6px 41px #c2c2c2;
+ }
+ .tools-card:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+ }
+ .project-btn{
+    background-color: #2d3f66;
+    border: none;
+    width: 117px;
+    height: 37px;
+ }
+ .project-btn:hover{
+    background-color: #384b75;
+ }
+.footer i{
+    cursor: pointer;
+}
+
+.display-none{
+    display: none;
+}
+.click-bg{
+    background-color: #5a6275 !important;
+}
+
+ /* for dark mode */
+ .sunWhite {
+     color: white;
+ }
+
+ .bg-dark-color {
+     background-color: #111827;
+ }
+
+ .dark-mode-shadow{
+    box-shadow: 0px 0px 25px #524d4d !important;
+ }
+
+ .bg-transparent{
+    background-color: transparent !important;
+ }
+
+
+ @media screen and (max-width : 991px) {
+     .twoBtns {
+         right: 2rem !important;
+     }
+ }
+
+@media screen and (max-width : 580px) {
+     .textBox {
+         text-align: center;
+         height: 40vh;
+     }
+
+     .secondBox img {
+         height: 30vh;
+         margin: auto;
+         display: block;
+     }
+
+     .twoBtns {
+         left: 1%;
+     }
+
+     .aDarkColor {
+         color: #9333ea !important
+     }
+}
+@media screen and (max-width : 500px) {
+    .firstP{
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .about-p{
+        font-size: 14px;
+    }
+    .firstP{
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width : 376px) {
+    .codeSpan{
+        margin: 0 !important;
+    }
+    /* .footer-p{
+        font-size: 12px !important;
+    } */
+    .projects-card img{
+        height: 140px !important;
+    }
+    .projects-card p{
+        font-size: 14px;
+    }
+
+    .projects-card small{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    /* .twoBtns{
+        margin-top: -25px !important;
+    } */
+    .main-container-row{
+        padding: 0 !important;
+    }
+    
+}
+
+@media screen and (max-width : 328px) {
+     .about-p h2{
+        font-size: 23px;
+    }
+}
