@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link dark-mode-white-text font-montserrat fw-600" aria-current="page"
+                        <a class="nav-link dark-mode-white-text font-montserrat fw-600 active" 
                             href="#home">Home</a>
                     </li>
                     <li class="nav-item">
@@ -58,32 +58,32 @@
     <!-- nav bar yahan pa end ho rahi ha  -->
 
     <!-- nav bar k bad wala container -->
-    <div class="container py-4 border-bottom" style="margin-top: 9vh;" id="home">
+    <section class="container py-4 border-bottom" style="margin-top: 9vh;" id="home">
         <div class="row justify-content-center align-items-center py-4 mt-4 main-container-row">
             <div class="col-lg-5 col-md-5 col-sm-5 d-flex align-items-center textBox order-second order-sm-second order-md-1 position-relative"
                 style="flex-direction: column;">
                 <h2 class="firstP mainHeading dark-mode-white-text fw-bold font-montserrat"><span
                         class="purple">Hi,</span><br> My name is <span class="purple">Usman</span> <br>and
-                    I am 
-                    <br><span class="purple" id="element"></span>
+                    I am
+                    <br><span class="purple animated-text" id="element"></span>
                 </h2>
                 <div class="row twoBtns" style="  position: relative; right: 3rem; margin-top: 7%;">
                     <div class="col-12 col-lg-12">
-                        <button class="btn1"><a href="#projects">View Projects</a></button>
+                        <button class="btn1"><a href="/resume/usmanjalil cv final.pdf" download>Download Resume</a></button>
                         <button class="btn2 my-2"><a href="mailto:usmanjalil4368@gmail.com">Sand Message</a></button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-6 col-12 secondBox order-sm-first order-md-2 order-first ">
-                <img src="pics/usman1.jpg" class="my-4" alt="">
+                <img src="pics/f1.png" class="my-4" alt="">
             </div>
         </div>
         <!-- <hr> -->
 
-    </div>
+    </section>
     <!-- Skills section  ,,,aboutMe , mySkills ,bgCLr classes used  in  this section -->
     <!-- id ==> about,skills  -->
-    <div class="container py-3 border-bottom" id="about">
+    <section class="container py-3 border-bottom" id="about">
         <div class="row justify-content-center py-4 px-1">
             <div class="col-lg-6 col-md-5 py-2">
                 <img src="pics/protfolio_img.png" class="img-fluid" alt="">
@@ -106,10 +106,10 @@
 
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- tools and technology sectionn  -->
-    <div class="container pb-5 border-bottom" id="skills">
+    <section class="container pb-5 border-bottom" id="skills">
         <div class="row text-center py-5 font-montserrat dark-mode-white-text">
             <h2 class="fw-bold">My <span class="purple">Tools & Technologies</span></h2>
             <p>I work with following Tools & Technologies</p>
@@ -213,10 +213,10 @@
             </div>
         </div>
 
-    </div>
+    </section>
 
     <!-- projects  -->
-    <div class="container border-bottom pb-5" id="projects">
+    <section class="container border-bottom pb-5" id="projects">
         <div class="row text-center pt-5 font-montserrat dark-mode-white-text">
             <h2 class="fw-bold">My <span class="purple">Projects</span></h2>
             <p></p>
@@ -318,10 +318,10 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
     <!-- contact form  -->
-    <div class="container" id="contact">
+    <section class="container" id="contact">
         <div class="row text-center pt-5 pb-4 font-montserrat dark-mode-white-text">
             <h2 class="fw-bold"><span class="purple">Contact</span> with me</h2>
         </div>
@@ -329,28 +329,30 @@
             <div class="col-md-8">
                 <form class="font-montserrat pb-4" onsubmit="email_send(); reset(); return false;">
                     <div class=" form-group mb-3">
-                    <input type="text" id="name" class="form-control rounded-0 dark-mode-white-text "
-                        required placeholder="Name">
-            </div>
-            <div class="form-group mb-3">
-                <input type="email" id="email" class="form-control rounded-0 dark-mode-white-text " required placeholder="Email">
-            </div>
-            <div class="form-group mb-3">
-                <input type="text" id="subject" class="form-control rounded-0 dark-mode-white-text "
-                    required placeholder="Subject">
-            </div>
+                        <input type="text" id="name" class="form-control rounded-0 dark-mode-white-text " required
+                            placeholder="Name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" id="email" class="form-control rounded-0 dark-mode-white-text " required
+                            placeholder="Email">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" id="subject" class="form-control rounded-0 dark-mode-white-text " required
+                            placeholder="Subject">
+                    </div>
 
-            <textarea id="message" class="form-control mb-2 rounded-0 dark-mode-white-text "
-                required placeholder="Enter your message"></textarea>
-                <button id="bttn"  class="btn btn-sm px-4 py-2 mt-3 project-btn mb-4">
-                    <p class="m-0 text-light" id="button-p">Sand Mail</p>
-                    <img id="button-image" class="display-none" src="pics/loading.svg" style="margin-top: -3px;" height="30px" alt="">
-                </button>
-            </form>
+                    <textarea id="message" class="form-control mb-2 rounded-0 dark-mode-white-text " required
+                        placeholder="Enter your message"></textarea>
+                    <button id="bttn" class="btn btn-sm px-4 py-2 mt-3 project-btn mb-4">
+                        <p class="m-0 text-light" id="button-p">Sand Mail</p>
+                        <img id="button-image" class="display-none" src="pics/loading.svg" style="margin-top: -3px;"
+                            height="30px" alt="">
+                    </button>
+                </form>
 
+            </div>
         </div>
-    </div>
-    </div>
+    </section>
 
     <!-- Footer  -->
 
@@ -373,7 +375,12 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
     <script src="script.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- new type js  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- end new type js  -->
+
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Setup and start animation! -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -386,16 +393,17 @@
         })();
     </script>
 
-    
     <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer', 'Web Developer', 'Web Designer', 'Creator', 'Reponsive Designer'],
-            typeSpeed: 50,
+        var typed = new Typed('.animated-text', {
+            strings: ['Full Stack developer', 'Web Designer', 'Responsive Designer','Creator'],
+            typeSpeed: 20,
+            backSpeed: 10,
+            loop: true,
+            loopCount: Infinity,
+            startDelay: 100,
+
         });
-
-
     </script>
-
 
 </body>
 

@@ -54,13 +54,27 @@
      font-family: 'Cabin', sans-serif;
      color: #212529 !important;
      font-size: large;
+     position: relative;
+     /* padding: 20px 0 !important; */
+ }
+ ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #9333ea;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
  }
 
- li a:active,
- li a:focus,
- li a:hover {
-     color: #8c61b5 !important;
+ li a:hover,
+ li a.active {
+     color:#9333ea  !important;
      transform: scale(1.1);
+ }
+ a:hover:after{
+    width: 100%;
+    transition: .5s;
  }
 
  .menuBtn {
@@ -79,9 +93,10 @@
  }
 
  .secondBox img {
-     max-width: 100%;
-     border-radius: 50%;
-     border: 20px dashed #9333ea;
+    max-width: 100%;
+    box-shadow: 0px 22px 33px #9333ea;
+    border-radius: 50%;
+    border: 1px solid #9333ea;
  }
 
  .twoBtns div .btn1 {
