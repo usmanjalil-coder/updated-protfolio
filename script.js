@@ -84,20 +84,40 @@ const email_send = () => {
 let navLinks = document.querySelectorAll('li a');
 let sections = document.querySelectorAll('section');
 
-window.onscroll = () =>{
-    sections.forEach(sec =>{
+window.onscroll = () => {
+    sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 170;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height){
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 document.querySelector('li a[href*=' + id + ']').classList.add('active');
             })
-
         }
     })
 }
+
+// toast 
+function showToast() {
+    Toastify({
+        text: "Downloading Start......!",
+        duration: 4000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        backgroundColor: "linear-gradient(to right, #00b09b, #9333ea)",
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        onClick: function () { } // Callback after click
+    }).showToast();
+}
+
+document.getElementById('download-btn').addEventListener('click', () => {
+    document.getElementById('download-a').click();
+    showToast()
+})
 

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Usman Jalil Portfolio</title>
+    <link rel="icon" href="/pics/cv.png" width="20px" type="image/icon type">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body class="dark">
@@ -69,7 +70,8 @@
                 </h2>
                 <div class="row twoBtns" style="  position: relative; right: 3rem; margin-top: 7%;">
                     <div class="col-12 col-lg-12">
-                        <button class="btn1"><a href="/resume/Usman Jalil.pdf" download>Download Resume</a></button>
+                        <button id="download-btn" class="btn1 text-light">Download Resume</button>
+                        <a hidden id="download-a" href="/resume/Usman Jalil.pdf" download>Download Resume</a>
                         <button class="btn2 my-2"><a href="mailto:usmanjalil4368@gmail.com">Send Message</a></button>
                     </div>
                 </div>
@@ -81,7 +83,7 @@
         <!-- <hr> -->
 
     </section>
-    <!-- Skills section  ,,,aboutMe , mySkills ,bgCLr classes used  in  this section -->
+
     <!-- id ==> about,skills  -->
     <section class="container py-3 border-bottom" id="about">
         <div class="row justify-content-center py-4 px-1">
@@ -373,7 +375,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="script.js"></script>
 
     <!-- new type js  -->
@@ -401,9 +403,12 @@
             loop: true,
             loopCount: Infinity,
             startDelay: 100,
-
         });
     </script>
+
+    <!-- toast  -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 
 </body>
 
